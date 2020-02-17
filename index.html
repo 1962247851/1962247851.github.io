@@ -38,7 +38,7 @@
             } else {
                 window.location.replace("./error.html");
             }
-        } else {
+        } else if(httpRequest.readyState !== 4){
             window.location.replace("./error.html");
         }
     };
